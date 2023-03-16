@@ -4,6 +4,8 @@ import Event from "./pages/Event";
 import EventDetail from "./pages/EventDetail";
 import EditEvent from "./pages/EditEvent";
 import Layout from "./layout/Layout";
+import NewEvent from "./pages/NewEvent";
+import EventRoot from "./pages/EventRoot";
 
 // Challenge / Exercise
 
@@ -33,10 +35,17 @@ const route = createBrowserRouter([
 		element: <Layout />,
 		errorElement: "page no found",
 		children: [
-			{ path: "/", element: <Home /> },
-			{ path: "/events", element: <Event /> },
-			{ path: "/events/:productId", element: <EventDetail /> },
-			{ path: "/events/:productId/edit", element: <EditEvent /> },
+			{ index: true, element: <Home /> },
+			{
+				path: "events",
+				element: <EventRoot />,
+				children: [
+					{ index: true, element: <Event /> },
+					{ path: "new", element: <NewEvent /> },
+					{ path: ":productId", element: <EventDetail /> },
+					{ path: ":eventId/edit", element: <EditEvent /> },
+				],
+			},
 		],
 	},
 ]);

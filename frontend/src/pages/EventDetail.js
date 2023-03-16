@@ -5,7 +5,7 @@ const EditDetail = () => {
 	return (
 		<main>
 			{" "}
-			<p> {param.productId}</p>
+			<p> {param.eventId}</p>
 			<h1> Event Detail Page</h1>
 		</main>
 	);

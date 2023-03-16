@@ -2,7 +2,7 @@ const NewEvent = () => {
 	return (
 		<div>
 			{" "}
-			<h1> Event PAGE</h1>
+			<h1> New Event PAGE</h1>
 		</div>
 	);
 };
