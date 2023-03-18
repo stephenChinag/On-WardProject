@@ -1,11 +1,1 @@
-{
-  "events": [
-    {
-      "id": "e1",
-      "title": "A dummy event",
-      "date": "2023-02-22",
-      "image": "https://blog.hubspot.de/hubfs/Germany/Blog_images/Optimize_Marketing%20Events%20DACH%202021.jpg",
-      "description": "Join this amazing event and connect with fellow developers."
-    }
-  ]
-}
+{"events":[{"title":"AA","image":"https://blog.hubspot.de/hubfs/Germany/Blog_images/trends-im-b2b-vertrieb.jpg","date":"2023-03-25","description":"AAAA","id":"60456ba0-fca1-469f-8dad-e375aebdad6b"},{"title":"A new Event ","image":"https://blog.hubspot.de/hubfs/Germany/Blog_images/trends-im-b2b-vertrieb.jpg","date":"2023-03-24","description":"A new Event has been please check it out ","id":"f6b8a4f2-2c83-4ee2-b786-a42e2b08ae08"},{"id":"e1","title":"A dummy event","date":"2023-02-22","image":"https://blog.hubspot.de/hubfs/Germany/Blog_images/Optimize_Marketing%20Events%20DACH%202021.jpg","description":"Join this amazing event and connect with fellow developers."},{"id":"e2","title":" A real Event","date":"2023-03-23","image":"https://blog.hubspot.de/hubfs/Germany/Blog_images/risikomanagement.png"}]}
