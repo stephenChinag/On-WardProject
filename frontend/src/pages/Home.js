@@ -1,7 +1,11 @@
+import PageContent from "../components/PageContent";
+
 const Home = () => {
 	return (
 		<main>
-			<h1> Home PAGE</h1>
+			<PageContent title="Welcome">
+				<p> Browse all our content</p>
+			</PageContent>
 		</main>
 	);
 };
