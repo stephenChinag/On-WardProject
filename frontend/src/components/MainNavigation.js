@@ -39,6 +39,16 @@ function MainNavigation() {
 							Newsletter
 						</NavLink>
 					</li>
+					<li>
+						<NavLink
+							to="/auth"
+							className={({ isActive }) =>
+								isActive ? styles.active : undefined
+							}
+						>
+							login
+						</NavLink>
+					</li>
 				</ul>
 			</nav>
 			<NewsletterSignup />
