@@ -11,7 +11,7 @@ export async function action({ request }) {
 	const searchPramms = new URL(request.url).searchParams;
 	const mode = searchPramms.get("mode") || "login";
 	if (mode !== "login" && mode !== "signup") {
-		throw json({ messaage: "wrong path " }, { status: 422 });
+		throw json({ messaage: "Unsuppoerted path " }, { status: 422 });
 	}
 
 	const data = await request.formData();
@@ -28,13 +28,16 @@ export async function action({ request }) {
 		},
 		body: JSON.stringify(authData),
 	});
-	if (response.staus === 422 || response.status === 401) {
+
+	if (response.status === 422 || response.status === 401) {
+		console.log(response);
 		return response;
 	}
 	if (!response.ok) {
-		throw json({ messaage: " n erro pease" }, { status: 500 });
+		throw json({ messaage: " could Autenticate user" }, { status: 500 });
 	}
-
-	console.log(authData);
+	const resData = await response.json();
+	const token = resData.token;
+	localStorage.setItem("token", token);
 	return redirect("/");
 }

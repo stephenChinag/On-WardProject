@@ -10,13 +10,19 @@
 	display: flex;
 	gap: 1rem;
 }
-
+.list button {
+	cursor: pointer;
+	padding: 0.5rem;
+	border-radius: 4px;
+}
 .list a {
+	
 	text-decoration: none;
 	color: var(--color-primary-400);
 }
 
 .list a:hover,
+.list button,
 .list a.active {
 	color: var(--color-primary-800);
 }
