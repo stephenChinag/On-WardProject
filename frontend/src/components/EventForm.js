@@ -103,7 +103,7 @@ export async function action({ request, params }) {
 		body: JSON.stringify(enteredData),
 		headers: {
 			"Content-Type": "application/json",
-			"Authorization": "Bearer " + token,
+			Authorization: "Bearer " + token,
 		},
 	});
 
